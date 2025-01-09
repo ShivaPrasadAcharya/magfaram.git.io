@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>मागफारम सहजिकरण सूचि</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>मागफारम सहजिकरण सूचि</h1>
+            <div class="search-container">
+                <select id="categoryFilter">
+                    <option value="all">सबै प्रकार</option>
+                    <option value="मसलन्द">मसलन्द र छपाई सम्बन्धी</option>
+                    <option value="कम्प्युटर">कम्प्युटरसँग सम्बन्धीत</option>
+                    <option value="भाडाकुडा">भाडाकुडा र सरसफाइ</option>
+                </select>
+                <input type="text" id="searchInput" placeholder="सामानको नाम खोज्नुहोस्...">
+            </div>
+        </header>
+        
+        <main>
+            <div id="itemList" class="item-grid"></div>
+        </main>
+
+        <footer>
+            <p>Last updated: 2081/09/25</p>
+        </footer>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="search.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
